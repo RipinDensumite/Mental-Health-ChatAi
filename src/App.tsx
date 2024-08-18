@@ -30,11 +30,11 @@ function App() {
     })
       .then(response => response.json()) // Parse the response as JSON
       .then(data => {
-        console.log(data)
+        // console.log(data)
         const content = data.choices[0]?.message?.content; // Extract the content
         setMsg(content);
         setIsLoading(false)
-        console.log(content); // Do something with the content (e.g., set it in state)
+        // console.log(content); // Do something with the content (e.g., set it in state)
       })
       .catch(error => {
         console.error('Error fetching data:', error);
